@@ -1,5 +1,5 @@
 ---
-- hosts: SwarmMaster, SwarmSlave
+- hosts: all #SwarmMaster, SwarmSlave
   become: yes
   vars:
     host_key_checking: False
