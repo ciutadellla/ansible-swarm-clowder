@@ -9,10 +9,10 @@
       nodes: yes
       verbose_output: yes
     register: result
-    when: inventory_hostname == groups['SwarmMaster'][0]
+    #when: inventory_hostname == groups['SwarmMaster'][0]
 
   - name: informaiton 
     debug:
       msg: |
         Swarm facts: {{ result.swarm_facts }}
-    when: inventory_hostname == groups['SwarmMaster'][0] 
+    #when: inventory_hostname == groups['SwarmMaster'][0] 
